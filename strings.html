@@ -1,0 +1,84 @@
+<!--Danny Campbell -->
+<!DOCTYPE html>
+<html lang="eng">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="strings.js"></script>
+    <title>Strings</title>
+    <style>
+       
+        /* background */
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: linear-gradient(to bottom, darkorange, green);
+            color: rgb(250, 248, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Container */
+        .header {
+            position: top;
+            top: 0;
+            padding: 10px 16px;
+            background: rgba(7, 11, 238, 0.1);
+            padding: 2rem;
+            border-radius: 1%;
+            box-shadow: 0 8px 32px 0 rgba(84, 146, 255, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(3, 0, 0, 0.18);
+            text-align: center;
+            width: 100px;
+            height: 75px;
+  
+        }
+        /* submit button */
+        .submit {
+            background: rgba(7, 11, 238, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(84, 146, 255, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(3, 0, 0, 0.18);
+            text-align: bottom;
+            width: 150px;
+            height: 75px;
+        }
+        .button {
+            background-color: #f7fbf8;
+            color: white;
+            padding: 1% 1%;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #ff0202;
+            box-shadow: 0 1% 1% rgba(5, 0, 0, 0.5);
+            transform: scale(1.25);
+        }
+       
+    </style>    
+</head>
+<body>
+    <div class = "header">
+        <h1>Strings</h1>
+    </div>
+    <div class = "submit">
+    <form id = "strInput" onsubmit="return false">
+        Is it a palandrome?: <input type = "text" id = "initString"/>
+        <br>
+        <div class = "button">      
+        <input type = "submit" onclick = "strings()"/>
+        </div>
+        <p id="resultString"> String Result </p> 
+        
+    </div>
+    <br>
+</body>
+</html> 
