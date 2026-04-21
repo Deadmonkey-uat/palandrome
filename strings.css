@@ -1,0 +1,54 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: darkorange;
+    font-size: 20px;
+    color: blueviolet;
+    background-image: linear-gradient(to bottom, darkorange, green);
+    background-position: auto, bottom center;   
+    background-size: 50%, 300%;
+    background-attachment: scroll, scroll ;
+    min-height: 100vh;
+}
+/* this formats all buttons the same */
+.btn{
+     display: block;
+     margin: 0 auto;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     border: none; 
+     font-size: 15px;
+
+}
+/* this formats only the primary button */
+.btn-primary{
+    background-color: purple
+    
+}
+/* this formats only the reset button */
+.btn-reset{
+    background-color: darkgreen
+
+}
+    /* this formats the heading */
+h1{
+    text-align: center;
+}
+/* the formats the input field */
+.input {
+     display: flex;
+     justify-content: center; /* Centers horizontally */
+     align-items: center;     /* Centers vertically */
+     height: 5vh;           /* Sets container to full viewport height */
+     padding: 5px 5px;
+     font-size: 25px;
+}
+/* this formats the output field */
+.result {
+    display: flex;
+     justify-content: center; /* Centers horizontally */
+     align-items: center;     /* Centers vertically */
+     height: 5vh;           /* Sets container to full viewport height */
+     padding: 5px 5px;
+     font-size: 25px;
+}

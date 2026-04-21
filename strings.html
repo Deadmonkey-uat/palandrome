@@ -1,0 +1,41 @@
+<!--Danny Campbell -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- set up the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="strings.css">   
+    <title>Strings</title>
+</head>
+<body>
+    <!-- create a way to move the header to the correct location -->
+    <div class="header">
+        <h1>Strings</h1>
+    </div>
+<!-- input field -->
+    <form id="strInput" onsubmit="return false;">
+        <!-- create a container for the input so I can move it and modify it -->
+        <div class="input">
+            Is it a palindrome?: <input type="text" id="initString" required />
+        </div>
+        <br>
+        <!-- setting up bottons to work seperately with different functions and appearences -->
+        <div class="button">
+            <!-- this is the primary button that triggers the javascript -->
+            <button class="btn btn-primary" type="button" onclick="strings()">Is it a Palindrome</button>
+            <!-- add in a break to give a little space -->
+            <br>
+            <!-- this button allows the field to be cleared for the next attempt -->
+            <button class="btn btn-reset" type="reset">Reset Form</button>
+        </div>
+    </form>
+<!-- this gives me a container for the result field so I can position it -->
+    <div class="result">
+        <p id="resultString">String Result</p>
+    </div>
+    <!-- my javascript in the above button would not load.  I asked chatgpt to assist with it and after multiple attemps 
+     the problem was my javascript wasnt loading at all.  this was the only way I could get it to load -->
+    <script src="strings.js"></script>
+</body>
+</html>
